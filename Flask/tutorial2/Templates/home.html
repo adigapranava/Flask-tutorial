@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+	<h1>Welcome to home page</h1>
+	<p>{{content}} you are welcomed!!!</p>  
+	{%for x in range(0,10)%}
+		{%if x % 2 == 1%}
+			<p>{{x}}</p>
+		{% endif %}
+	{% endfor %}
+	{% for name in names%}
+	<p>{{name}}</p>
+
+	{% endfor %}
+</body>
+</html>
